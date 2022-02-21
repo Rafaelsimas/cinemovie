@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.topo{
+    background-color: rgba(36, 35, 35, 0.336);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.caixa{
+
+    width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    margin-left: 49px;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li:hover{
+    color: red;
+}
+
+ion-icon{
+    margin-right: 8px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    margin-top: 50px;
+   
+    display: flex;
+    justify-content: center;
+}
+
+.secao-flex{
+  
+    width: 90%;    
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 18px;
+}
+
+.filme{
+    position: relative;
+    background-color: black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(223, 220, 220, 0.26);
+    color: white;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+}
+
+.filme:hover{
+  
+    opacity: 0.9;
+}
+
+.filme button{
+    margin-top: 160px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    position: absolute;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+}
+
+.filme .descricao{
+   background-color: rgba(36, 35, 35, 0.452);
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+
+
+.filme img{
+   
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px){
+    .topo{
+        background-color: rgba(36, 35, 35, 0.336);
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .caixa{
+
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+
+    .caixa h1{
+        width: 150px;
+    }
+
+    ul li{
+        margin-left: 1px;
+    }
+    
+    .secao-flex{
+        width: 90%;    
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 18px;
+    }
+}
+@media (max-width: 580px){
+    .topo{
+        background-color: rgba(36, 35, 35, 0.336);
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .caixa{
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .caixa h1{
+        width: 150px;
+    }
+
+
+    ul li{
+        margin-left: 8px;
+    }
+    .secao-flex{
+  
+        width: 90%;    
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     gap: 18px;
+    }
+}
